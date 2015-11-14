@@ -1,5 +1,4 @@
-#
-Repository for Coursera /Reproducible Research/ course
+#Repository for Coursera /Reproducible Research/ course
 
 ##Analysis of personal activity monitoring device data
 

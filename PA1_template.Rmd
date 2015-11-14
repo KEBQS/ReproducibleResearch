@@ -82,7 +82,7 @@ plot(unqdates, SumTotalTotStepsPerDay, main="Histogram of total number of steps 
      col=c("yellow","orange","pink","red","blue","green","black"))
 ```
 
-An observation, activity jumps up in the last week of November, coincidentaly during the Thanksgiving week.
+**OBSERVATION**, activity jumps up in the last week of November, coincidentaly during the Thanksgiving week.
 
 ####**3. Calculate and report the mean and median of the total number of steps taken per day**
 
