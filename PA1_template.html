@@ -385,7 +385,7 @@ meanStepsOnWeekdays &lt;- sapply(StepsOnWeekdays, mean)
 meanStepsOnWeekends &lt;- sapply(StepsOnWeekends, mean)</code></pre>
 </div>
 <div id="make-a-panel-plot-containing-a-time-series-plot-i.e.type-l-of-the-5-minute-interval-x-axis-and-the-average-number-of-steps-taken-averaged-across-all-weekday-days-or-weekend-days-y-axis." class="section level4">
-<h4><strong>2. Make a panel plot containing a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). </strong></h4>
+<h4><strong>2. Make a panel plot containing a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis).</strong></h4>
 <pre class="r"><code>#Plotting the data
 par(mfcol=c(2,1))
 plot(unqintervals, meanStepsOnWeekdays, type=&quot;l&quot;,
