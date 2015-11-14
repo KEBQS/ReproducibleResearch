@@ -80,6 +80,7 @@ Coloring the histogram with 7 colors to differenciate each week.
 plot(unqdates, SumTotalTotStepsPerDay, main="Histogram of total number of steps taken each day", 
      xlab="Dates in October and November,2012)", ylab="Steps", type="h", lwd=5, 
      col=c("yellow","orange","pink","red","blue","green","black"))
+dev.copy(png, file="plot1.png", height=480, width=480)
 ```
 
 **OBSERVATION**, activity jumps up in the last week of November, coincidentaly during the Thanksgiving week.
@@ -111,6 +112,7 @@ AvgStepsPerInterval <- sapply(AvgStepsPerInterval, mean, na.rm=TRUE)
 #Plotting the data as a Time Series per interval
 plot(unqintervals, AvgStepsPerInterval, type="l", main = "Time Series Plot", xlab="5-minute Intervals", 
      ylab="Avg Steps",col="red", lwd=2)
+dev.copy(png, file="plot2.png", height=480, width=480)
 ```
      
 ####**2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?**
@@ -184,10 +186,12 @@ par(mfcol=c(2,1))
 plot(unqdates, SumTotalTotStepsPerDay, main="Total steps taken each day (data with missing values)", 
      xlab="Dates in October and November,2012)", ylab="Steps", type="h", lwd=5, 
      col=c("yellow","orange","pink","red","blue","green","black"))
+dev.copy(png, file="plot3.png", height=480, width=480)
 # Plotting the new histogram in the second column
 plot(unqdates, SumTotalTotStepsPerDayDF2, main="Total steps taken each day (data without missing values)", 
      xlab="Dates in October and November,2012)", ylab="Steps", type="h", lwd=5, 
      col=c("darkgoldenrod2","chocolate1","darkmagenta","firebrick4","dodgerblue4","darkgreen","black"))
+dev.copy(png, file="plot4.png", height=480, width=480)
 ```
 
 Do these values differ from the estimates from the first part of the assignment?
@@ -253,10 +257,12 @@ plot(unqintervals, meanStepsOnWeekdays, type="l",
      main="Average number of steps per interval across all weekdays", 
      xlab="Interval", ylab="Average steps for weekdays", 
      lwd=2, col="red")
+dev.copy(png, file="plot5.png", height=480, width=480)
 plot(unqintervals, meanStepsOnWeekends, type="l",
      main="Average number of steps per interval across all weekends", 
      xlab="Interval", ylab="Average steps for weekends", 
      lwd=2, col="blue")
+dev.copy(png, file="plot6.png", height=480, width=480)
 ```
 
 **OBSERVATION :** We can observe the average number of steps increses during the weekends and decreases during weekdays. One cause would be the lack of time for a person to do an activity outside work.
